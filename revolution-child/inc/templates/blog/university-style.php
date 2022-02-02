@@ -99,10 +99,10 @@ $universityShortCode = get_term_meta($qobj->term_id, 'wpcf-university-short-code
 $universityOrderBy = get_term_meta($qobj->term_id, 'wpcf-university-order-by', true);
 $universityRanking = get_term_meta($qobj->term_id, 'wpcf-university-ranking', true);
 $universityRankingDesc = get_term_meta($qobj->term_id, 'wpcf-university-ranking-desc', true);
-			?>
-			<img src="<?php echo $universityImage; ?>" alt="Girl in a jacket" width="100%" height="600">
-			<img src="<?php echo $universityBannerImage; ?>" alt="university Banner Image" width="auto" height="450"> 
-			<img src="<?php echo $statsIcon1; ?>" alt="Statistics Icon 01" width="28" height="28">
+?>
+<img src="<?php echo $universityImage; ?>" alt="Girl in a jacket" width="100%" height="600">
+<img src="<?php echo $universityBannerImage; ?>" alt="university Banner Image" width="auto" height="450"> 
+<img src="<?php echo $statsIcon1; ?>" alt="Statistics Icon 01" width="28" height="28">
 	<h4 class="fact-title"><?php echo $statsTitle1; ?>
 		<span class="small-text"><?php echo $statsContent1; ?></span>
 	</h4>

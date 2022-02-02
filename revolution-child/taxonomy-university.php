@@ -95,7 +95,7 @@ $description = '';//'Programs from';
 	<img src="<?php echo $statsIcon4; ?>" alt="Statistics Icon 04" width="28" height="28">
 	<h4 class="fact-title"><?php echo $statsTitle4; ?>
 		<span class="small-text"><?php echo $statsContent4; ?></span>
-	</h4> 
+	</h4>
 	<?php
 	echo $universityLocation . '<br>' ;
 	echo '<img src='.$universityIcon.' '.'width=150>' ;
