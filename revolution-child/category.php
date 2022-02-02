@@ -36,6 +36,9 @@ $banner_title = get_term_meta($qobj->term_id, 'wpcf-category-banner-title', true
 	$statsTitle4 = get_term_meta($qobj->term_id, 'wpcf-stats-title-4', true);
 	$statsContent4 = get_term_meta($qobj->term_id, 'wpcf-stats-content-4', true);
 
+	$categoryVideoUrl = get_term_meta($qobj->term_id, 'category-video-url', true);
+	
+
 if(empty($banner_title))
 {
 	$banner_title = $qobj->name;
@@ -124,6 +127,8 @@ $description = '';//'Programs from';
 	<h4 class="fact-title"><?php echo $statsTitle4; ?>
 		<span class="small-text"><?php echo $statsContent4; ?></span>
 	</h4> 
+
+	<?php echo $categoryVideoUrl; ?>
 	<!-- END 31.01.2022 -->
 
 <div class="row max_width blog_row">
