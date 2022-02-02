@@ -25,6 +25,17 @@
 	$hoursPerWeek = types_render_field('hours-per-week', array('output' => 'normal', 'id' => $post->ID));
 	$courseType = types_render_field('course-type', array('output' => 'normal', 'id' => $post->ID));
 	$courseFee = types_render_field('course-fee', array('output' => 'normal', 'id' => $post->ID));
+	$universityLocation = types_render_field('university-location', array('output' => 'normal', 'id' => $post->ID));
+	
+	$universityIcon = types_render_field('university-icon', array('output' => 'normal', 'id' => $post->ID));
+	$universityLogoSmall = types_render_field('university-logo-small', array('output' => 'normal', 'id' => $post->ID));
+	$universityImage = types_render_field('university-image', array('output' => 'normal', 'id' => $post->ID));
+	$universityVideo = types_render_field('university-video', array('output' => 'normal', 'id' => $post->ID));
+	$universityWhySection = types_render_field('university-why-section', array('output' => 'normal', 'id' => $post->ID));
+	$universityShortCode = types_render_field('university-short-code', array('output' => 'normal', 'id' => $post->ID));
+	$universityOrderBy = types_render_field('university-order-by', array('output' => 'normal', 'id' => $post->ID));
+	$universityRanking = types_render_field('university-ranking', array('output' => 'normal', 'id' => $post->ID));
+	$universityRankingDesc = types_render_field('university-ranking-desc', array('output' => 'normal', 'id' => $post->ID));
 	// END 29.01.2022
 
 	$universities = get_the_terms(get_the_ID(), 'university');
@@ -75,11 +86,21 @@
 						<!-- START 29.01.2022
 						// Display Data fetched from Toolset => Custom Fields Group => Programs 
 						-->
-						<span><?php echo $startDate ?></span>
-						<span><?php echo $endDate ?></span>
-						<span><?php echo $hoursPerWeek ?></span>
-						<span><?php echo $courseType ?></span>
-						<span><?php echo $courseFee ?></span>
+						<span><?php echo $startDate; ?></span>
+						<span><?php echo $endDate; ?></span>
+						<span><?php echo $hoursPerWeek; ?></span>
+						<span><?php echo $courseType; ?></span>
+						<span><?php echo $courseFee; ?></span>
+						<span><?php echo $universityLocation; ?></span>
+						<span><?php echo $universityIcon; ?></span>
+						<span><?php echo $universityLogoSmall; ?></span>
+						<span><?php echo $universityImage; ?></span>
+						<span><?php echo $universityVideo; ?></span>
+						<span><?php echo $universityWhySection; ?></span>
+						<span><?php echo $universityShortCode; ?></span>
+						<span><?php echo $universityOrderBy; ?></span>
+						<span><?php echo $universityRanking; ?></span>
+						<span><?php echo $universityRankingDesc; ?></span>
 						<!-- END 29.01.2022 -->
 						<?php
 						/*if($program_type == 'diploma-program')
